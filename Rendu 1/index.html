@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+	<title>Titre de la page</title>
+	<meta charset="UTF-8">
+	<style>
+		body{
+			background-color: #fff;
+			color: #111111;
+			margin: auto;
+			
+			width: 1200px;
+			text-align: left; /* on rétablit l'alignement normal du texte */
+			
+
+		}
+		h4 {
+			background-color: #111111;
+			color: #fff;
+			padding: 15px;
+			text-align: center;
+		}
+	</style>
+</head>
+<body>
+	<h4 id="TOP">Intro</h4>
+	<h1>Ma première balise &lt;H1&gt;</h1>
+	<h2>Ma première balise &lt;H2&gt;</h2>
+	<h3>Ma première balise &lt;H3&gt;</h3>
+	<p>Mon premier paragraphe &lt;p&gt; </p>
+	<p>Mon deuxième paragraphe &lt;p&gt; </p>
+
+	<a href="https://www.w3schools.com">Lien vers w3schools</a>
+
+	<img src="https://www.w3schools.com/html/w3schools.jpg" alt="Texte alternatif" width="104" height="142">
+	<button>Un bouton cliquable</button>
+
+	<h4>Une liste &lt;ul&gt; </h4>
+	<ul>
+		<li>Coffee</li>
+		<li>Tea</li>
+		<li>Milk</li>
+	</ul>
+	<h4>Une liste numérotée &lt;ol&gt;</h4>
+	<ol>
+		<li>Coffee</li>
+		<li>Tea</li>
+		<li>Milk</li>
+	</ol>
+
+	<p>
+		<h4>Paragraphe incluant des balises &lt;br &gt;</h4>
+		Les balises &lt;br &gt; permettent de sauter des lignes <br>
+		Il n'est pas nécessaire de les fermer. <br><br>
+		Néanmoins, pour une validation stricte ou si l'on veut parser du XML,<br/> on peut fermer directement un saut de ligne dans la balise ouvrante comme ceci :<br/>&lt;br /&gt;
+	</p>
+
+	<h4>les balises HTML ne sont pas case sensitive.</h4>
+	&lt;p&gt; Un paragraphe &lt;/p&gt;<br/>
+	affichera la même chose que
+	&lt;P&gt; Un paragraphe &lt;/P&gt;<br/>
+	<P>Même si les majuscules sont tolérées dans les tags en HTML5 </P>
+
+	<p>W3Schools recommande l'utilisation du lowercase</p>
+
+
+
+	<h4>Les attributs HTML </h4>
+	<h5>L'attribut href</h5>
+	<p>
+		Un lien se définit par le tag &lt;a&gt;. <br/>
+		l'attribut href permet de spécifier l'url<br/>
+		<a href="https://www.w3schools.com">Un lien vers le site w3schools</a>
+
+	</p>
+	<h5>L'attribut src</h5>
+	<p>
+
+		C'est le tag &lt;img&gt; qui permet de <br/>définir une image.<br/>C'est dans l'attribut src que l'on donne le chemin vers l'image.<br/>
+
+		<img src="https://www.w3schools.com/html/img_girl.jpg"><br/>
+
+
+		Il est possible d'ajuster la largeur et la hauteur en pixels de l'image dans les attributs width et height<br/>
+
+		<img src="https://www.w3schools.com/html/img_girl.jpg" width="250" height="300">
+		<br/>
+		L'attribut alt permet aux non voyants d'avoir une description de l'image interpréter par les screan readers.<br/>
+
+		
+
+		De plus si l'image n'est pas disponible, ce sera la valeur de l'attribut alt qui sera affichée.
+		<img src="zzzz" alt="Une fille de dos"><br/>
+	</p>
+	<h5>L'attribut style</h5>
+	<p>
+		
+		<p>On l'utilise pour modifier le style d'un élément sa couleur, la police, la taille...</p>
+		<br/>Exemple:<br/>
+		<p style="color:red; ">Un paragraphe rouge</p>
+
+	</p>
+	<h5>L'attribut lang</h5>
+	<p>
+		Pour une meilleure accéssibilité et pour les moteurs de recherche, il est bon de déclarer le langage de la page dans la balise &lt;html&gt; via l'attribut lang.
+
+	</p>
+
+	<h5>L'attribut title</h5>
+	<p title="C'est un paragraphe important">
+		Permet au passage de la souris sur un élément d'afficher un texte en info bulle.
+		C'est le cas de ce paragraphe.
+	</p>
+
+	<h5>Importance de mettre les valeurs des attributs entre cote</h5>
+	<p title=Importance des quotes>
+		Même si cela peut fonctionner sans, cela peut générer des comportements non désirés.
+		Comme dans ce même paragraphe qui n'affiche qu'en partie l'info bulle faute de quotes.
+		Conclusion : il faut toujours mettre les valeurs entres quotes.
+
+	</p>
+	<h5>Simple ou double?</h5>
+	<p title='contenu avec "double quote dedans"'>
+		Des double pour la plupart des cas sauf s'il y a déjà dans notre contenu des simples ou doubles quotes. On se rabattra sur des simples quotes et vice versa dans ces cas précis. Exemple dans le title de ce paragraphe.
+
+
+	</p>
+
+
+	<h4>Titres de section headings</h4>
+	
+	<p>
+		Il y a 6 niveaux d'importance, du plus au moins important: <br/>
+		<h1>Titre &lt;h1&gt;</h1>
+		<h2>Titre &lt;h2&gt;</h2>
+		<h3>Titre &lt;h3&gt;</h3>
+		<h4>Titre &lt;h4&gt;</h4>
+		<h5>Titre &lt;h5&gt;</h5>
+		<h6>Titre &lt;h6&gt;</h6>
+		<br/>
+		Les moteurs de recherche les utilisent pour interpréter la structure et le contenu général de la page.<br/>
+
+		Chaque balise de titre a une taille prédédinie. On peut la modifier via la balise style.
+		<h1 style="font-size:50px;">Cette balise &lt;h1&gt; a une taille personalisée</h1>
+	</p>
+	<h4>Règles horizontales &lt;hr&gt;</h4>
+	<p>
+		Cela permet de séparer par une ligne horizontale le contenu de la page.<br/>
+		<h5>1er sujet</h5>
+		<p>Un paragraphe qui aborde un thème</p>
+		<hr>
+		<h5>2e sujet</h5>
+		<p>Un nouveau pargraphe qui aborde un autre thème</p>
+	</p>
+	<h4>Balise &lt;head&gt;</h4>
+	<p>Placée entre &lt;html&gt; et &lt;body&gt; <br/> &lt;head&gt; ne s'affiche pas à l'écran.<br/> Elle contient les metadata du doc HTML:<br/> titre de la page, character set, styles, scripts,etc.
+	</p>
+	<h4>Les paragraphes  &lt;p&gt;</h4>
+	<p>Il y a beau avoir        des       espaces
+
+		et des   sauts de     ligne dans le code de ce              paragraphe.
+		Le navigateur ne les interprète pas.
+		<br><br>Pour<br> les saut <br>de lignes<br> on utilise <br> le tag &lt;br&gt;
+
+		<h4>La balise  &lt;pre&gt;</h4>
+		<pre>La balise &lt;pre&gt; preserve les
+			espaces       et
+			les   sauts de
+			lignes
+		</pre>
+
+	</p>
+	<h4>L'attribut style</h4>
+	<p>Permet <span style="color:tomato;">de modifier l'apparence</span> des éléments <span style="background-color:lightblue;font-size:50px;font-family:courier;">html:</span> couleur, du texte, de l'arrière-plan,
+		<br><span style="color:red;font-family:verdana;">taille, type de la police, etc</span></p>
+
+		<p style="text-align:center;">
+			On peut même
+		</p>
+		<p style="text-align:left;font-size:150%">
+			aligner le texte
+		</p>
+		<p style="text-align:right;">
+			à notre convenance!
+		</p>
+		<h4>Formatage de texte</h4>
+
+		<p>
+
+			<ul>
+				<li>&lt;b&gt; ==> <b>Texte en gras</b></li>
+				<li>&lt;strong&gt; ==> <strong>Truc important</strong></li>
+				<li>&lt;i&gt; ==> <i>En italique</i></li>
+				<li>&lt;em&gt; ==> <em>Permet d'insister</em></li>
+				<li>&lt;mark&gt;==> <mark> Surligné</mark></li>
+				<li>&lt;small&gt;==> <small>Tout petit</small></li>
+				<li>&lt;del&gt; ==> <del>Barré</del></li>
+				<li>&lt;ins&gt; ==> <in>Texte ajouté</in></li>
+				<li>&lt;sub&gt; ==> <sub>En petit et en bas</sub></li>
+				<li>&lt;sup&gt; ==> <sup>En petit et en haut</sup></li>
+			</ul>
+		</p>
+		<h4>Citations</h4>
+		<p>
+			<blockquote cite="https://www.java.com/fr/download/faq/whatis_java.xml">
+				Java est un langage de programmation et une plate-forme informatique qui ont été créés par Sun Microsystems en 1995. Beaucoup d'applications et de sites Web ne fonctionnent pas si Java n'est pas installé et leur nombre ne cesse de croître chaque jour. Java est rapide, sécurisé et fiable. Des ordinateurs portables aux centres de données, des consoles de jeux aux superordinateurs scientifiques, des téléphones portables à Internet, la technologie Java est présente sur tous les fronts !
+			</blockquote>
+			<p>
+				Courte mise <q>entre guillemets</q> avec la balise &lt;q&gt; <br/>
+			</p>
+			<p>L'<abbr title="Assemblée Générale">A.G.</abbr> du <abbr title="Comité Contre les Chats">C.C.C.</abbr> ne va pas pouvoir se tenir cette année.</p>
+			<address>
+				244 Route de Turin,<br> 
+				06300 Nice.<br>
+				France
+			</address>
+
+			<img src="https://www.w3schools.com/html/img_the_scream.jpg" width="220" height="277" alt="The Scream">
+			<p><cite>Le cri</cite> de Edvard Munch (1893)</p>
+			<p>
+				Certains navigateurs supportent le tag &lt;bdo&gt; <br/>qui permet d'afficher le texte de gauche à droite: <br/>
+				<bdo dir="rtl">MURDER</bdo>
+			</p>
+		</p>
+
+
+		<h4>Commentaire &lt;!-- C'est ici qu'on comente --&gt;</h4>
+		<p>
+			Il y a des comentaires mais cela ne se voit que dans le code
+			<!-- C'est ici qu'on comente -->
+
+		</p>
+		<h4>Couleurs</h4>
+		<p>Différentes manières d'avoir du lightblue:</p>
+		<h1 style="background-color:lightblue;">lightblue</h1>
+		<h1 style="background-color:#add8e6;">#add8e6</h1>
+		<h1 style="background-color:rgb(173, 216, 230);">rgb(173, 216, 230)</h1>
+		<h1 style="background-color:hsl(195, 53%, 79%);">hsl(195, 53%, 79%)</h1>
+		<p>Réglage de l'opacité</p>
+		<h1 style="background-color:rgb(173, 216, 230, 0.5);">rgb(173, 216, 230, 0.5)</h1>
+		<h1 style="background-color:hsl(195, 53%, 79%, 0.2);">hsl(195, 53%, 79%, 0.2)</h1>
+
+
+		<h1 >C'est la couleur nommée <span style="color:Tomato;"> tomato</span></h1>
+		<p style="border:3px solid MediumSeaGreen;color:rgb(114, 211, 156);background-color:hsl(147, 11%, 32%, 0.4);">Camaieu verdatre</p>
+		
+
+		<h4>Liens HTML</h4>
+		<a href="https://google.com">Lien vers une adresse web</a><br/>
+		<a href="https://google.com" target="_blank">Lien vers une adresse web mais dans un nouvel onglet</a><br/>
+		<a href="page.html" title="Il faut cliquer pour que ça marche!">Lien vers une autre page de ce <q>site</q></a><br/><br/>
+		<button onclick="document.location = 'page.html'">Mon autre page</button><br/>
+
+		<a href="page.html">
+			<img src="https://www.w3schools.com/html/smiley.gif" alt="Mon autre page" style="width:42px;height:42px;border:0;">
+		</a>
+		<a href="#TOP">Tout en haut de la page</a>
+
+		<h4>Map sur une image</h4>
+		<p>Cliquer sur le nez ou l'un des yeux du chat</p>
+		<img src="img/chat.jpg" alt="Chat" usemap="#chat">
+		<map name="chat">
+			<area target="_blank" alt="oeil1" title="oeil1" href="img/chat2.jpg" coords="473,315,31" shape="circle" >
+			<area target="_blank" alt="oeil2" title="oeil2" href="img/chat3.jpg" coords="702,311,39" shape="circle">
+			<area target="_blank" alt="nez" title="nez" href="img/chat4.jpeg" coords="548,424,583,423,600,425,613,435,597,452,585,462,574,464" shape="poly">
+		</map>
+
+		<h4>Tableaux</h4>
+		<p>
+			<table style="width:100%;border: 1px solid black;">
+				<tr>
+					<th>Nom</th>
+					<th>Prénom</th>
+					<th>Profession</th>
+				</tr>
+				<tr>
+					<td>Quiche</td>
+					<td>Loren</td>
+					<td>Plombier</td>
+				</tr>
+				<tr>
+					<td>Doe</td>
+					<td>John</td>
+					<td>Kinésithérapeute</td>
+				</tr>
+				<tr>
+					<td>Deloin</td>
+					<td>Alain</td>
+					<td>Mime</td>
+				</tr>
+				
+			</table>
+
+		</p>
+
+
+
+		<h4>Iframe</h4>
+
+		<iframe height="200px" width="100%" src="page.html" name="iframe_a"></iframe>
+
+
+
+	</body>
+	</html>
