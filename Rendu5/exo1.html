@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+ 
+<style>
+
+  body{
+
+    background-color: orange;
+    color:white;
+
+  }  
+  .conteneur{
+    display: flex;
+    flex-direction : row;
+  flex-wrap : wrap;
+
+  }
+  .col{
+    display: flex;
+    flex-direction : column;
+    flex-grow: 1;
+  }
+  .row{
+    display: flex;
+    background-color: red;
+    flex-direction: row;
+
+  }
+
+  .foot{
+    background-color: grey;
+  }
+
+  .tennis{
+    background-color: orange;
+  }
+
+  .f1{
+    background-color: blue;
+  }
+
+  .rugby{
+    background-color: red;
+  }
+
+  .nata{
+    background-color: green;
+  }
+</style>
+</head>
+<body>
+
+  <h1>Utilisation de FlexBox</h1>
+
+  
+
+  <div class="conteneur">
+    <div class="col">
+      <div class="foot">Football</div>
+      <div class="tennis">Tennis</div>
+      <div class="f1">Formule 1</div>  
+      <div class="rugby">Rugby</div>
+      <div class="nata">Natation</div>
+    </div>
+    <div class="row">
+      <div class="foot">Pelé</div>
+      <div class="tennis">Agassi</div>
+      <div class="f1">Prost</div>  
+      <div class="rugby">Chabal</div>
+      <div class="nata">Phelps</div>
+    </div> 
+  </div>
+
+</body>
+</html>

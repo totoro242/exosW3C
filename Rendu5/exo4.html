@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+  <style>
+
+    .header { grid-area: header; }
+    .menu { grid-area: menu; }
+    .mainFlexBox { grid-area: mainFlexBox; }
+
+    .footer { grid-area: footer; }
+
+    .grid-container {
+      display: grid;
+      grid-template-areas:
+      'header  header header header'
+      'menu  mainFlexBox mainFlexBox mainFlexBox'
+      'menu  footer footer footer';
+      grid-gap: 1px;
+
+      padding: 5px;
+    }
+
+    .grid-container > div {
+      text-align: justify;
+      padding: 10px 0;
+      font-size: 20px;
+    }
+
+    .grid-container .header{
+      text-align: center;
+      font-size: 50px;
+      background-color: lightgrey;
+    }
+
+    .grid-container .menu{
+      text-align: justify;
+      font-size: 30px;
+      background-color: lightgrey;
+    }
+	
+	.grid-container .menu ul{
+      
+      list-style: none;
+    }
+	.rub{
+		text-decoration:none;
+	
+	}
+	
+    .grid-container .footer{
+      text-align: center;
+      font-size: 30px;
+      background-color: lightgrey;
+    }
+
+
+
+
+    .mainFlexBox {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
+
+    .article {
+      display: flex;
+      flex-direction: column;
+      width: 270px;
+      height:auto;
+
+      border: 1px solid gray;
+      margin-bottom: 10px;
+      padding: 5px;
+    }
+
+    .article .titre{
+      display: flex;
+      font-weight: bold;
+      justify-content : center;
+
+    }
+
+    .article .sous_titre{
+      font-style: italic;
+
+    }
+    .article .photo{
+     max-width: 100%;
+     height: auto;
+     width:auto;
+     padding: 4px;
+
+   }
+
+   .article .legende{ 
+     padding: 2px;
+
+   }
+   .article .texte{ 
+     padding: 2px;
+
+
+   }
+
+   .article .texte::first-letter{
+    font-size:2em
+  }
+
+  .article .link_article{
+
+    text-decoration: none;
+    text-align: right;
+  }
+</style>
+</head>
+<body>
+
+  <div class="grid-container">
+    <div class="header">News</div>
+    <div class="menu"> Les Rubriques
+		<ul>
+			<li><a href="#" class="rub">A la une</a></li>
+			<li><a href="#" class="rub">Echos</a></li>
+			<li><a href="#" class="rub">Politique</a></li>
+			<li><a href="#" class="rub">Loisirs</a></li>
+			<li><a href="#" class="rub">Sports</a></li>
+		</ul>
+	
+	</div>
+    <div class="mainFlexBox">
+
+      <div class="article">
+        <span class="titre">Titre de l'article</span>
+        <div class="sous_titre">Un texte qui résume la teneur de l'article en quelques mots.</div>
+        <img class="photo" src="https://img.surfsession.com/pictures/2018/20181205/thumbnail/1812054676.png" alt="" />
+        <span class="legende">&copy; Photo D.R.</span>
+        <div class="texte">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus quis erat velit. Ut eu lacus vitae orci dapibus aliquam. Sed sodales enim eget risus finibus tincidunt. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus quis erat velit. Ut eu lacus vitae orci dapibus aliquam. Sed sodales enim eget risus finibus tincidunt.
+        </div>
+        <a href="#" class="link_article">Voir plus</a>
+      </div>
+      <div class="article">
+        <span class="titre">Titre de l'article</span>
+        <div class="sous_titre">Un texte qui résume la teneur de l'article en quelques mots.</div>
+        <img class="photo" src="https://img.surfsession.com/pictures/2018/20181205/thumbnail/1812054676.png" alt="" />
+        <span class="legende">&copy; Photo D.R.</span>
+        <div class="texte">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus quis erat velit. Ut eu lacus vitae orci dapibus aliquam. Sed sodales enim eget risus finibus tincidunt. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus quis erat velit. Ut eu lacus vitae orci dapibus aliquam. Sed sodales enim eget risus finibus tincidunt.
+        </div>
+        <a href="#" class="link_article">Voir plus</a>
+      </div>
+      <div class="article">
+        <span class="titre">Titre de l'article</span>
+        <div class="sous_titre">Un texte qui résume la teneur de l'article en quelques mots.</div>
+        <img class="photo" src="https://img.surfsession.com/pictures/2018/20181205/thumbnail/1812054676.png" alt="" />
+        <span class="legende">&copy; Photo D.R.</span>
+        <div class="texte">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus quis erat velit. Ut eu lacus vitae orci dapibus aliquam. Sed sodales enim eget risus finibus tincidunt. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus quis erat velit. Ut eu lacus vitae orci dapibus aliquam. Sed sodales enim eget risus finibus tincidunt.
+        </div>
+        <a href="#" class="link_article">Voir plus</a>
+      </div>
+      <div class="article">
+        <span class="titre">Titre de l'article</span>
+        <div class="sous_titre">Un texte qui résume la teneur de l'article en quelques mots.</div>
+        <img class="photo" src="https://img.surfsession.com/pictures/2018/20181205/thumbnail/1812054676.png" alt="" />
+        <span class="legende">&copy; Photo D.R.</span>
+        <div class="texte">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus quis erat velit. Ut eu lacus vitae orci dapibus aliquam. Sed sodales enim eget risus finibus tincidunt. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus quis erat velit. Ut eu lacus vitae orci dapibus aliquam. Sed sodales enim eget risus finibus tincidunt.
+        </div>
+        <a href="#" class="link_article">Voir plus</a>
+      </div>
+      <div class="article">
+        <span class="titre">Titre de l'article</span>
+        <div class="sous_titre">Un texte qui résume la teneur de l'article en quelques mots.</div>
+        <img class="photo" src="https://img.surfsession.com/pictures/2018/20181205/thumbnail/1812054676.png" alt="" />
+        <span class="legende">&copy; Photo D.R.</span>
+        <div class="texte">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus quis erat velit. Ut eu lacus vitae orci dapibus aliquam. Sed sodales enim eget risus finibus tincidunt. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus quis erat velit. Ut eu lacus vitae orci dapibus aliquam. Sed sodales enim eget risus finibus tincidunt.
+        </div>
+        <a href="#" class="link_article">Voir plus</a>
+      </div>
+      <div class="article">
+        <span class="titre">Titre de l'article</span>
+        <div class="sous_titre">Un texte qui résume la teneur de l'article en quelques mots.</div>
+        <img class="photo" src="https://img.surfsession.com/pictures/2018/20181205/thumbnail/1812054676.png" alt="" />
+        <span class="legende">&copy; Photo D.R.</span>
+        <div class="texte">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus quis erat velit. Ut eu lacus vitae orci dapibus aliquam. Sed sodales enim eget risus finibus tincidunt. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus quis erat velit. Ut eu lacus vitae orci dapibus aliquam. Sed sodales enim eget risus finibus tincidunt.
+        </div>
+        <a href="#" class="link_article">Voir plus</a>
+      </div>
+      <div class="article">
+        <span class="titre">Titre de l'article</span>
+        <div class="sous_titre">Un texte qui résume la teneur de l'article en quelques mots.</div>
+        <img class="photo" src="https://img.surfsession.com/pictures/2018/20181205/thumbnail/1812054676.png" alt="" />
+        <span class="legende">&copy; Photo D.R.</span>
+        <div class="texte">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus quis erat velit. Ut eu lacus vitae orci dapibus aliquam. Sed sodales enim eget risus finibus tincidunt. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus quis erat velit. Ut eu lacus vitae orci dapibus aliquam. Sed sodales enim eget risus finibus tincidunt.
+        </div>
+        <a href="#" class="link_article">Voir plus</a>
+      </div>
+      <div class="article">
+        <span class="titre">Titre de l'article</span>
+        <div class="sous_titre">Un texte qui résume la teneur de l'article en quelques mots.</div>
+        <img class="photo" src="https://img.surfsession.com/pictures/2018/20181205/thumbnail/1812054676.png" alt="" />
+        <span class="legende">&copy; Photo D.R.</span>
+        <div class="texte">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus quis erat velit. Ut eu lacus vitae orci dapibus aliquam. Sed sodales enim eget risus finibus tincidunt. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus quis erat velit. Ut eu lacus vitae orci dapibus aliquam. Sed sodales enim eget risus finibus tincidunt.
+        </div>
+        <a href="#" class="link_article">Voir plus</a>
+      </div>
+      <div class="article">
+        <span class="titre">Titre de l'article</span>
+        <div class="sous_titre">Un texte qui résume la teneur de l'article en quelques mots.</div>
+        <img class="photo" src="https://img.surfsession.com/pictures/2018/20181205/thumbnail/1812054676.png" alt="" />
+        <span class="legende">&copy; Photo D.R.</span>
+        <div class="texte">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus quis erat velit. Ut eu lacus vitae orci dapibus aliquam. Sed sodales enim eget risus finibus tincidunt. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus quis erat velit. Ut eu lacus vitae orci dapibus aliquam. Sed sodales enim eget risus finibus tincidunt.
+        </div>
+        <a href="#" class="link_article">Voir plus</a>
+      </div>
+      <div class="article">
+        <span class="titre">Titre de l'article</span>
+        <div class="sous_titre">Un texte qui résume la teneur de l'article en quelques mots.</div>
+        <img class="photo" src="https://img.surfsession.com/pictures/2018/20181205/thumbnail/1812054676.png" alt="" />
+        <span class="legende">&copy; Photo D.R.</span>
+        <div class="texte">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus quis erat velit. Ut eu lacus vitae orci dapibus aliquam. Sed sodales enim eget risus finibus tincidunt. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus quis erat velit. Ut eu lacus vitae orci dapibus aliquam. Sed sodales enim eget risus finibus tincidunt.
+        </div>
+        <a href="#" class="link_article">Voir plus</a>
+      </div>
+      <div class="article">
+        <span class="titre">Titre de l'article</span>
+        <div class="sous_titre">Un texte qui résume la teneur de l'article en quelques mots.</div>
+        <img class="photo" src="https://img.surfsession.com/pictures/2018/20181205/thumbnail/1812054676.png" alt="" />
+        <span class="legende">&copy; Photo D.R.</span>
+        <div class="texte">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus quis erat velit. Ut eu lacus vitae orci dapibus aliquam. Sed sodales enim eget risus finibus tincidunt. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus quis erat velit. Ut eu lacus vitae orci dapibus aliquam. Sed sodales enim eget risus finibus tincidunt.
+        </div>
+        <a href="#" class="link_article">Voir plus</a>
+      </div>
+
+    </div>
+
+
+    <div class="footer">Footer</div>
+  </div>
+</body>
+</html>

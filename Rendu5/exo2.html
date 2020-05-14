@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+ 
+<style>
+.conteneur{
+
+  display:flex;
+  flex-direction : row;
+  flex-wrap : wrap ;
+  border:1px dotted red;
+  
+  height: 400px;
+  
+align-content : space-around;
+
+/*
+justify-content : center; 
+justify-content : flex-start; 
+justify-content : flex-end;
+justify-content : space-between;
+justify-content : space-around; 
+
+align-items : center;
+align-items : flex-start;
+align-items : flex-end; 
+align-items : stretch;
+align-items : baseline; 
+
+align-content : center; 
+align-content : flex-start; 
+align-content : flex-end;
+align-content : space-between;
+align-content : space-around;
+*/
+
+/*
+  display:flex;
+  flex-direction : column;
+  flex-wrap : wrap ;
+  height: 400px;
+*/
+}
+
+.conteneur div{
+  width: 100px;
+  height: 100px;
+  border:1px solid blue;
+}
+  
+</style>
+</head>
+<body>
+
+  <h1>Utilisation de FlexBox</h1>
+
+  
+
+  <div class="conteneur">   
+      <div>1</div>
+      <div>2</div>
+      <div>3</div>
+      <div>4</div>
+      <div>5</div>
+
+      <div>6</div>
+      <div>7</div>
+      <div>8</div>
+      <div>9</div>
+      <div>10</div>
+
+      <div>11</div>
+      <div>12</div>
+      <div>13</div>
+      <div>14</div>
+      <div>15</div>    
+  </div>
+  <p>
+    <b>Est-ce pertinent un wrap sur une colonne ?</b>
+    <br/><br/>
+    Si le conteneur principale a une
+    flex-direction : column; et qu'on lui a spécifié une hauteur, cela permettra aux div qui ne  rentrent pas dans la première colonne de passer à la deuxième et ainsi de suite. Donc, cela peut être pertinent.
+  </p>
+
+</body>
+</html>
